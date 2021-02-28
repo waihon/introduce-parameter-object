@@ -1,6 +1,7 @@
-class Shipping
+class Package
   attr_reader :height, :length, :weight, :width, :express
-  def initialize(height, length, weight, width, express=nil)
+
+  def initialize(height:, length:, weight:, width:, express: nil)
     @height = height
     @length = length
     @weight = weight
